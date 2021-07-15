@@ -1,38 +1,1597 @@
-.App {
-  text-align: center;
+/* resets  */
+::placeholder {
+    font-size: 14px;
+    color: #D1D1D1;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+    padding: 0px !important
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a, h1, h2, h3, h4, h5, h6, p, span, button {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* toggle  */
+#about, #workshop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+#about i, #workshop i {
+    color: white;
+    font-size: 25px;
+    padding: 30px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pop-content {
+    width: 795px;
+    background-color: white;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.pop-content h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#vision {
+    margin-bottom: 40px;
+}
+
+.pop-content p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#workshop p{
+    margin-bottom: 20px;
+}
+
+#workshop h1 {
+    margin-bottom: 20px;
+}
+
+#workshop span a {
+    color: #F9BC1F
+}
+
+#workshop h3 {
+    font-size: 23px;
+}
+
+/* navigation  */
+nav {
+    background-color: black;
+}
+
+.navbar-brand img {
+    height: 80px
+}
+
+nav li {
+    padding-left: 38px;
+}
+
+.nav-link {
+    padding: 0.5rem 0rem !important
+}
+
+nav li a {
+    color: white !important;
+    font-size: 12px;
+}
+
+ul li .active {
+    color: #F9BC1F !important;
+    display: inline-block;
+    border-bottom: solid 2px #F9C84B;
+}
+
+nav #courses {
+    width: 130px;
+    height: 40px;
+    border-radius: 33px;
+    background-color: #F9BC1F;
+    color: white;
+    margin-left: 40px;
+}
+
+.navbar-toggler {
+    background: #F9BC1F !important;
+    border: none;
+    padding: 10px 6px !important;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: white;
+    border: solid 1px white;
+
+}
+
+.navbar-toggler span + span {
+    width: 18px;
+    margin: 4px 0 0 4px;
+    width: 22px;
+}
+
+.navbar-toggler span + span + span {
+    width: 10px;
+    margin-left: 4px;
+}
+
+
+
+/* courses  */
+.course img {
+    width: 100%
+}
+
+.course > div {
+    margin-top: 10px;
+}
+
+.course-facilitators {
+    padding: 30px;
+    box-shadow: 0px 8px 16px #00000014;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+/* price  */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 40px 0px
+}
+
+.price i {
+    padding-right: 12px;
+    color: #F9BC1F
+}
+
+
+/* course-info  */
+.full-information {
+    background-color: white;
+    padding: 10px 30px;
+    box-shadow: -3px 3px 16px #00000014;
+    border-radius: 5px;
+}
+
+.buttons button {
+    height: 50px;
+    width: auto;
+    background-color: #F9BC1F;
+    border: none;
+    outline: none;
+    padding: 0px 15px;
+    margin-right: 10px
+}
+
+.buttons .active {
+    background-color: white;
+    border-bottom: solid 2px #F9BC1F
+}
+
+.information {
+    margin: 12px 0px
+}
+
+.information h1 {
+    font-size: 20px;
+    font-weight: bold
+}
+
+.information h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.information h6 {
+    font-size: 10px;
+}
+
+.information h3 {
+    font-size: 16px;
+}
+
+.information p {
+    font-size: 12px;
+    color: #707070
+}
+
+.information button {
+    width: 178px;
+    height: 60px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.information button h1 {
+    margin-bottom: 0px;
+}
+
+#enroll-now {
+    background-color: #F9BC1F;
+}
+
+/* instructors  */
+.information .group::-webkit-scrollbar {
+    width: 0px
+}
+
+.information .card {
+    border-radius: 30px;
+    /* width: 517px; */
+    box-shadow: 0px 3px 20px #2A2A2A52;
+    height: 230px;
+    /* max-width: 90% !important; */
+    /* margin-bottom: 40px !important; */
+}
+
+.information .card img {
+  border-radius: 30px 0px 0px 30px !important;
+    min-height: 91%;
+    object-fit: cover;
+}
+
+
+
+/* banner  */
+.banner {
+    width: 100%;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-image: url(../src/bg-img/Mask\ Group\ 13.jpg);
+    }
+
+    25% {
+        background-image: url(../src/bg-img/Component\ 26\ –\ 1.jpg);
+    }
+
+    50% {
+        background-image: url(../src/bg-img/Component\ 26\ –\ 2.jpg);
+    }
+
+    75% {
+        background-image: url(../src/bg-img/Mask\ Group\ 1.jpg);
+    }
+}
+
+.details {
+    padding: 333px 0px 199px 0px
+}
+
+.details h1 {
+    font-size: 30px;
+    line-height: 55px;
+    color: white;
+}
+
+.emphases {
+    display: inline-block;
+    font-size: 32px;
+    color: #F9C84B
+}
+
+.bars span {
+    display: inline-block;
+    border: solid 3px #F9BC1F;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.bar1 {
+    width: 60px;
+}
+
+.bar2 {
+    width: 20px;
+    opacity: 0.5
+}
+
+.details p {
+    margin-top: 50px;
+    color: #F9C84B;
+    font-size: 20px;
+}
+
+
+/* wrapper  */
+.wrapper {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hero-image {
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../src/bg-img/Class\ Fier.PNG);
+    background-size: cover;
+    background-position: 100% 34%;
+}
+
+.course-information {
+    padding: 28px 44px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px ;
+}
+
+.course-information .title {
+    color: #7B7B7B;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.course-information h3 {
+    color: #7B7B7B;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-information .course-range {
+    font-size: 15px;
+    color: #7B7B7B;
+    margin-bottom: 44px;
+}
+
+.course-information #enroll {
+    height: 45px;
+    width: 140px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F9BC1F;
+    border: 0px;
+}
+
+
+
+/* facilitators  */
+.facilitators {
+    background-image: url(./bg-img/Path\ 2.jpg);
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.facilitators .container, .testimonails > .container {
+    background-color: white;
+    box-shadow: 0px 8px 16px #00000014;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.section-header {
+    height: 103px;
+    border-left: solid 38px #F9CA51;
+    margin-bottom: 40px;
+}
+
+.section-header h1{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 32px 40px
+}
+
+.group {
+    padding: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    overflow: hidden;
+}
+
+/* for toggle button  */
+.group-extended {
+    height: auto !important;
+}
+
+.course-group {
+    padding: 0px 50px
+}
+
+#group-toggle-button i {
+    color:#707070;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+    box-shadow: 0px 3px 8px #00000014;
+}
+
+#group-toggle-button {
+    display: inline-block;
+    color: #F9B937;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 30px !important;
+}
+
+.facilitators .group::-webkit-scrollbar {
+    width: 0px
+}
+
+.facilitators .card, .course-facilitators .card {
+    border-radius: 30px;
+    width: 529px;
+    cursor: pointer;
+    box-shadow: 0px 3px 20px #2A2A2A52;
+    margin-top: 10px;
+}
+
+.facilitators .card-body, .course-facilitators .card-body {
+    padding: 20px 2px 20px 30px !important
+}
+
+.facilitators .card-body h1, .course-facilitators .card-body h1 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.facilitators .card-body h3, .course-facilitators .card-body h3 {
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+.facilitators .card-body p, .course-facilitators .card-body p {
+    color: #7B7B7B;
+    font-size: 11px;
+}
+
+.facilitator {
+    padding-bottom: 30px;
+}
+
+.card img {
+    border-radius: 30px 0px 0px 30px !important;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.card a {
+    color: #F9B937;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #F9B937;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
+/* facilitator page  */
+/* facilitator-details  */
+.facilitator-details {
+    padding: 24px 0px 0px 0px
+}
+
+.individual {
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding: 10px;
+    height: 125px;
+    margin-bottom: 20px;
+    color: black
+}
+
+.facilitator-details .active {
+    background-color: #474838;
+}
+
+.active h1, .active p {
+    color: white
+}
+
+.individual img {
+    height: 100%;
+    border-radius: 10px;
+    width: 20%;
+    object-fit: cover;
+}
+
+.individual .person {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.person h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person p {
+    font-size: 12px;
+}
+
+.bio {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    padding: 25px 90px;
+    position: sticky;
+    top: 20px;
+}
+
+.bio p {
+    font-size: 15px;
+}
+
+
+
+/* testimonail  */
+.testimonails {
+    padding-top: 60px;
+    background-image: url(./bg-img/Mask\ Group\ 3.jpg);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.reviews {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px
+}
+
+.reviews::-webkit-scrollbar {
+    width: 0px
+}
+
+.testimony {
+    text-align: center;
+    min-width: 335px;
+    padding: 46px;
+    box-shadow: 0px 3px 20px #00000012;
+    background-color: #FFFAEB;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.testimony i {
+    padding-bottom: 30px;
+}
+
+.testimony p {
+    font-size: 12px;
+}
+
+.testimony h3 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* footer  */
+footer {
+    padding-top: 115px;
+}
+
+footer h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 0px !important;
+}
+
+footer img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+footer button {
+    display: block;
+    color: #F8B531;
+    background-color: white;
+    border-radius: 5px;
+    border: 0px;
+    height: 40px !important;
+    width: 163px !important;
+    outline: none;
+    margin: 32px 0px !important
+}
+
+footer i {
+    padding-right: 10px;
+}
+
+.foot {
+    margin-top: 40px;
+}
+
+.foot p{
+    font-size: 12px;
+}
+
+.register {
+    margin-top: 40px;
+}
+
+.register .form-container {
+    box-shadow: 0px 3px 8px #00000029;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.form-head h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-head p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.form-head button {
+    height: 40px;
+    border-radius: 5px;
+    color: #F9BC1F;
+    font-weight: bold;
+    border: solid 2px #F9BC1F;
+    padding: 5px 20px;
+    background-color: white;
+}
+
+.register img {
+    width: 100%
+}
+
+.register h3 {
+    font-size: 16px;
+    color: #F9BC1F;
+    margin-top: 40px;
+}
+
+.form-body label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #707070;
+}
+
+.form-body input {
+    border: solid 1px #CBCBCB;
+    width: 444px;
+    box-shadow: 0px 3px 6px #AAAAAA29;
+    height: 45px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.form-body button {
+    display: block;
+    height: 40px;
+    background-color: #F9BC1F;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    border: 0px;
+    padding: 5px 20px
+}
+
+.course-header {
+    border-radius: 5px;
+    background-color: #C7C7C7;
+    height: 90px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.course-header h1 {
+    display: inline-block;
+    margin-right: 30px !important;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.course-header .disabled {
+    color: white
+}
+
+
+
+
+
+/* media queries */
+@media (min-width:1400px){
+  
+}
+
+@media (min-width:1020px) and (max-width:1399px){
+    /* full information  */
+    .full-information {
+        width: 545px;
+        right: 83px;
+    }
+
+    .buttons button {
+        height: 36px;
+        width: 22%;
+        margin-bottom: 8px;
+        padding: 0px
+    }
+
+    .information button {
+      width: 125px
+    }
+
+    /* .facilitators  */
+    .group {
+        height: 660px;
+        padding: 0px
+    }
+    
+    #group-toggle-button {
+        display: block;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .course-facilitators {
+        padding: 10px 0px
+    }
+
+    .facilitators .card, .course-facilitators .card {
+        width: 440px
+    }
+
+    .facilitators .card-body, .course-facilitators .card-body {
+        padding: 20px 20px !important;
+    }
+
+    .facilitators .card-body h1, .course-facilitators .card-body h1 {
+        font-size: 18px;
+    }
+
+    /* facilitator page  */
+    /* .individual  */
+    .person h1 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1119px){
+    /* banner  */
+    .details {
+    padding: 100px 0px;
+    }
+
+    .details h1 {
+    font-size: 30px;
+    line-height: 40px;
+    }
+
+    .emphases {
+    font-size: 28px;
+    }
+
+    .details p {
+        margin-top: 45px;
+    }
+
+    /* .facilitator  */
+    .group {
+        height: 660px;
+        padding: 0px
+    }
+    
+    #group-toggle-button {
+        display: block;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .facilitators {
+        margin-top: 350px;
+        padding: 50px 10px 0px 10px
+    }
+
+    .course-facilitators {
+        padding: 10px 0px
+    }
+
+    .facilitators .card, .course-facilitators .card {
+        width: 435px
+    }
+    /* facilitator page  */
+    /* .individual  */
+    .person h1 {
+        font-size: 15px;
+    }
+
+    /* .person p{
+        font-size: 9px;
+    } */
+
+    /* full information  */
+    .full-information {
+        width: 545px;
+        right: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .pop-content {
+        margin: 5px;
+        padding:40px
+    }
+    
+    /* banner  */
+    .details {
+    padding: 100px 0px;
+    }
+
+    .details h1 {
+    font-size: 30px;
+    line-height: 40px;
+    }
+
+    .emphases {
+    font-size: 28px;
+    }
+
+    .details p {
+        margin-top: 45px;
+    }
+
+    /* wrapper  */
+    .wrapper {
+        right: 50px;
+        top: 290px
+    }
+
+    /* .facilitator  */
+    .group {
+        height: 820px;
+    }
+
+    .facilitators {
+        margin-top: 345px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .course-facilitators {
+        margin-top: 50px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .facilitator {
+        padding: 0px
+    }
+
+    .section-header h1 {
+        font-size: 30px;
+    }
+
+    .facilitators .card, .course-facilitators .card {
+        margin-bottom: 20px !important;
+                margin-right: 20px !important;
+        height: auto;
+        width: 100%
+    }
+
+    .facilitators .card-body, .course-facilitators .card-body {
+        padding: 15px 10px !important;
+    }
+
+    /* .course-group {
+        padding: 0px 50px;
+    } */
+
+    /* facilitator page  */
+    /* .individual  */
+    .person h1 {
+        font-size: 14px;
+    }
+
+    .person p {
+        font-size: 10px;
+    }
+
+    .bio {
+        padding: 20px
+    }
+
+    /* .testimonails */
+    .testimonails {
+        background-size: 100% 78%;
+        padding-top: 20px;
+    }
+
+    /* full information  */
+    .full-information {
+        top: 409px;
+        right: 0;
+        padding: 15px 30px;
+    }
+
+    .buttons button {
+        height: 36px;
+        margin-bottom: 10px;
+    }
+
+    /* .register  */
+    .form-body input {
+        width: 100%;
+    }
+
+    .register .form-container {
+        padding: 18px;
+    }
+
+    .form-head p {
+        margin-bottom: 10px;
+    }
+
+    .form-head button {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .pop-content {
+        margin: 5px;
+        padding:30px
+    }
+
+    .pop-content h1 {
+        font-size: 16px;
+    }
+
+    .pop-content p {
+        font-size: 10px;
+    }
+
+    #about i, #workshop i {
+        padding: 10px;
+    }
+
+    #workshop h3 {
+        font-size: 16px;
+    }
+
+     .navbar-brand img {
+        height: 70px
+    }
+
+    /* banner  */
+    .details {
+    padding: 100px 0px;
+    }
+
+    .details h1 {
+    font-size: 30px;
+    line-height: 40px;
+    }
+
+    .emphases {
+    font-size: 28px;
+    }
+
+    .details p {
+        margin-top: 30px;
+    }
+
+    /* wrapper  */
+    .wrapper {
+        top: 400px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchbar {
+        margin-bottom: 10px;
+    }
+
+    /* .facilitator  */
+    .group {
+        height: 835px
+    }
+
+    #group-toggle-button {
+        margin-left: 0px;
+    }
+
+    .facilitators {
+        margin-top: 475px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .course-facilitators {
+        margin-top: 45px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .facilitator {
+        padding: 0px
+    }
+
+    .section-header h1 {
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .facilitators .group, .course-facilitators .group {
+        display: block;
+        padding: 0px
+    }
+
+    .facilitators .card, .course-facilitators .card {
+        margin-bottom: 20px !important;
+        height: auto;
+        width: 100%
+    }
+
+    .facilitators .card-body, .course-facilitators .card-body {
+        padding: 15px 10px !important;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    /* facilitator page  */
+    /* individual  */
+    .person h1 {
+        font-size: 15px;
+    }
+
+    .bio {
+        padding: 20px
+    }
+
+    /* .testimonails */
+    .testimonails {
+        background-size: 100% 77%;
+        padding-top: 20px;
+    }
+
+    /* course  */
+
+    /* full information  */
+    .full-information {
+        width: 100%;
+        top: 409px;
+        right: 0;
+        padding: 30px;
+    }
+
+    .buttons button {
+        height: 36px;
+        margin-bottom: 10px;
+    }
+
+    .information button {
+        width: 135px;
+    }
+
+
+    /* footer  */
+    footer {
+        padding-top: 40px;
+    }
+
+    footer h1 {
+        font-size: 24px;
+    }
+
+    footer button {
+        margin: 30px 0px !important;
+    }
+}
+
+@media (min-width:386px) and (max-width:575px) {
+    .pop-content {
+        margin: 5px;
+        padding:15px
+    }
+
+    .pop-content h1 {
+        font-size: 16px;
+    }
+
+    .pop-content p {
+        font-size: 10px;
+    }
+
+    #about i, #workshop i {
+        padding: 10px;
+    }
+
+    #workshop h3 {
+        font-size: 16px;
+    }
+
+    /* nav  */
+    .navbar-brand img {
+        height: 70px
+    }
+
+    /* banner  */
+    .details {
+    padding: 55px 0px;
+    }
+
+    .details h1 {
+    font-size: 24px;
+    line-height: 27px;
+    }
+
+    .emphases {
+    font-size: 28px;
+    }
+
+    .details p {
+        margin-top: 10px;
+    }
+
+    /* wrapper  */
+    .wrapper {
+        width: 365px;
+        top: 321px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .searchbar {
+        margin-bottom: 5px;
+    }
+
+    .course-information button {
+        width: 130px;
+        height: 50px
+    }
+
+    .course-information .course-range {
+        margin-bottom: 30px;
+    }
+
+    /* .facilitator  */
+    .group {
+        height: 2235px;
+    }
+
+    #group-toggle-button {
+        margin-left: 0px;
+    }
+
+    .facilitators {
+        margin-top: 475px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .course-facilitators {
+        margin-top: 40px;
+        padding: 50px 0px 40px 0px
+    }
+
+    .facilitator {
+        padding: 0px
+    }
+
+    .section-header h1 {
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .facilitators .group, .course-facilitators .group {
+        display: block;
+        padding: 0px
+    }
+
+    .facilitators .card, .course-facilitators .card {
+        margin-bottom: 20px !important;
+        height: auto;
+        width: 100%
+    }
+
+    .facilitators .card-body, .course-facilitators .card-body {
+        padding: 15px 10px !important;
+    }
+
+    .card img {
+        border-radius: 30px 30px 0px 0px !important;
+    }
+
+    /* facilitator page  */
+    /* individual  */
+    .individual img {
+        width: 112px
+    }
+
+    .person p {
+        font-size: 7px;
+    }
+
+    .person h1{
+        font-size: 12px;
+    }
+
+    .bio {
+        padding: 10px
+    }
+
+    /* testiomonails  */
+    .testimonails {
+        padding-top: 20px;
+    }
+
+    .reviews {
+        display: block
+    }
+
+    .testimony {
+        width: 100%;
+        padding: 10px;
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* course  */
+
+
+    .price {
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    /* full information  */
+    .full-information {
+        width: 100%;
+        top: 409px;
+        right: 0;
+        padding: 30px;
+    }
+
+    .buttons button {
+        height: 36px;
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    .information h1 {
+        font-size: 16px;
+    }
+
+    .information h2 {
+        font-size: 12px;
+    }
+
+    .information p {
+        font-size: 10px;
+    }
+
+    .information button {
+        width: 95px;
+        height: 50px;   
+    }
+
+    /* .register  */
+    .form-body input {
+        width: 100%;
+    }
+
+    .register .col-lg-6 {
+        margin-top: 10px !important;
+    }
+
+    .register .form-container {
+        padding: 18px;
+    }
+
+    .form-head p {
+        margin-bottom: 10px;
+    }
+
+    .form-head button {
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        margin: 5px
+    }
+
+
+    /* footer  */
+    footer {
+        padding-top: 40px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+
+    footer button {
+        margin: 30px 0px !important;
+    }
+}
+
+@media (max-width: 385px) {
+    .pop-content {
+        margin: 5px;
+        padding:15px
+    }
+
+    .pop-content h1 {
+        font-size: 16px;
+    }
+
+    .pop-content p {
+        font-size: 10px;
+    }
+
+    #about i, #workshop i {
+        padding: 10px;
+    }
+
+    #workshop h3 {
+        font-size: 16px;
+    }
+
+    /* nav  */
+    .navbar-brand img {
+        height: 70px
+    }
+
+    /* banner  */
+    .details {
+    padding: 55px 0px;
+    }
+
+    .details h1 {
+    font-size: 24px;
+    line-height: 27px;
+    }
+
+    .emphases {
+    font-size: 28px;
+    }
+
+    .details p {
+        margin-top: 10px;
+    }
+
+    /* wrapper  */
+    .wrapper {
+        width: 365px;
+        right: 5px;
+        top: 321px
+    }
+
+    .searchbar {
+        margin-bottom: 5px;
+    }
+
+    .course-information button {
+        width: 130px;
+        height: 50px;
+    }
+
+    .course-information .course-range {
+        margin-bottom: 30px;
+    }
+
+    /* .facilitator  */
+    .group {
+        height: 1810px
+    }
+
+    #group-toggle-button {
+        margin-left: 0px;
+    }
+
+    .facilitators {
+        margin-top: 475px;
+        padding: 50px 10px 40px 10px
+    }
+
+    .course-facilitators {
+        margin-top: 40px;
+        padding: 50px 0px 40px 0px
+    }
+
+    .facilitator {
+        padding: 0px
+    }
+
+    .section-header h1 {
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .facilitators .group, .course-facilitators .group {
+        display: block;
+        padding: 0px
+    }
+
+    .facilitators .card{
+        margin-bottom: 20px !important;
+        height: auto;
+        width: 100%
+    }
+
+    .course-facilitators .card {
+        margin: 10px !important;
+        height: auto;
+        width: 93%
+    }
+
+    .facilitators .card-body, .course-facilitators .card-body {
+        padding: 15px 10px !important;
+    }
+
+    .card img {
+        border-radius: 30px 30px 0px 0px !important;
+    }
+
+    /* facilitaroe page  */
+    /* individual  */
+    .individual .person {
+        margin-left: 5px;
+    }
+
+    .individual img {
+        width: 106px
+    }
+
+    .person p {
+        font-size: 7px;
+    }
+
+    .person h1{
+        font-size: 12px;
+    }
+
+    .bio {
+        padding: 5px
+    }
+
+
+    /* testiomonails  */
+    .testimonails {
+        padding-top: 20px;
+    }
+
+    .reviews {
+        display: block
+    }
+
+    .testimony {
+        width: 100%;
+        padding: 10px;
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* nav  */
+    .navbar-brand img {
+        height: 70px
+    }
+
+    /* course  */
+
+
+    .price {
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    /* full information  */
+    .full-information {
+        width: 100%;
+        top: 409px;
+        right: 0;
+        padding: 30px;
+    }
+
+    .buttons button {
+        height: 36px;
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    .information h1 {
+        font-size: 16px;
+    }
+
+    .information h2 {
+        font-size: 12px;
+    }
+
+    .information button {
+        width: 95px;
+        height: 50px;   
+    }
+
+    /* .register  */
+    .form-body input {
+        width: 100%;
+    }
+
+    .register .col-lg-6 {
+        margin-top: 10px !important;
+    }
+
+    .register .form-container {
+        padding: 18px;
+        width: 97%
+    }
+
+    .form-head p {
+        margin-bottom: 10px;
+    }
+
+    .form-head button {
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        margin: 5px
+    }
+
+
+
+
+    /* footer  */
+    footer {
+        padding-top: 40px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+    }
+
+    footer button {
+        margin: 30px 0px !important;
+    }
 }
