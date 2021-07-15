@@ -1,26 +1,38 @@
 {
   "files": {
     "main.css": "/kickstartwithvos/static/css/main.d84267ba.chunk.css",
-    "main.js": "/kickstartwithvos/static/js/main.bd2ab8e2.chunk.js",
-    "main.js.map": "/kickstartwithvos/static/js/main.bd2ab8e2.chunk.js.map",
-    "runtime-main.js": "/kickstartwithvos/static/js/runtime-main.29a47186.js",
-    "runtime-main.js.map": "/kickstartwithvos/static/js/runtime-main.29a47186.js.map",
+    "main.js": "/kickstartwithvos/static/js/main.a11abefe.chunk.js",
+    "main.js.map": "/kickstartwithvos/static/js/main.a11abefe.chunk.js.map",
+    "runtime-main.js": "/kickstartwithvos/static/js/runtime-main.a93ba719.js",
+    "runtime-main.js.map": "/kickstartwithvos/static/js/runtime-main.a93ba719.js.map",
     "static/css/2.163c1558.chunk.css": "/kickstartwithvos/static/css/2.163c1558.chunk.css",
-    "static/js/2.96dca9c8.chunk.js": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js",
-    "static/js/2.96dca9c8.chunk.js.map": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js.map",
-    "static/js/3.191d6c29.chunk.js": "/kickstartwithvos/static/js/3.191d6c29.chunk.js",
-    "static/js/3.191d6c29.chunk.js.map": "/kickstartwithvos/static/js/3.191d6c29.chunk.js.map",
+    "static/js/2.8d83ae9f.chunk.js": "/kickstartwithvos/static/js/2.8d83ae9f.chunk.js",
+    "static/js/2.8d83ae9f.chunk.js.map": "/kickstartwithvos/static/js/2.8d83ae9f.chunk.js.map",
+    "static/js/3.faf9eed6.chunk.js": "/kickstartwithvos/static/js/3.faf9eed6.chunk.js",
+    "static/js/3.faf9eed6.chunk.js.map": "/kickstartwithvos/static/js/3.faf9eed6.chunk.js.map",
     "index.html": "/kickstartwithvos/index.html",
     "static/css/2.163c1558.chunk.css.map": "/kickstartwithvos/static/css/2.163c1558.chunk.css.map",
     "static/css/main.d84267ba.chunk.css.map": "/kickstartwithvos/static/css/main.d84267ba.chunk.css.map",
-    "static/js/2.96dca9c8.chunk.js.LICENSE.txt": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/kickstartwithvos/static/media/Path 2.fa6a19d3.jpg"
+    "static/js/2.8d83ae9f.chunk.js.LICENSE.txt": "/kickstartwithvos/static/js/2.8d83ae9f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/kickstartwithvos/static/media/Path 2.fa6a19d3.jpg",
+    "static/media/KSIV-Logo.png": "/kickstartwithvos/static/media/KSIV-Logo.017edfd5.png",
+    "static/media/aaderinsola.jpg": "/kickstartwithvos/static/media/aaderinsola.9741c532.jpg",
+    "static/media/aimee.jpg": "/kickstartwithvos/static/media/aimee.06a4bd21.jpg",
+    "static/media/blessing.jpg": "/kickstartwithvos/static/media/blessing.0efd9bb8.jpg",
+    "static/media/cooney.jpg": "/kickstartwithvos/static/media/cooney.b6cad5d2.jpg",
+    "static/media/dayo.jpg": "/kickstartwithvos/static/media/dayo.ee9d691f.jpg",
+    "static/media/femi.jpg": "/kickstartwithvos/static/media/femi.55920392.jpg",
+    "static/media/jeniffer.jpg": "/kickstartwithvos/static/media/jeniffer.551529ef.jpg",
+    "static/media/mars.jpg": "/kickstartwithvos/static/media/mars.9c27d58d.jpg",
+    "static/media/nic.jpg": "/kickstartwithvos/static/media/nic.34abec8d.jpg",
+    "static/media/onyechukwu.jpg": "/kickstartwithvos/static/media/onyechukwu.4c1a074b.jpg",
+    "static/media/tanya.jpg": "/kickstartwithvos/static/media/tanya.5d42f589.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29a47186.js",
+    "static/js/runtime-main.a93ba719.js",
     "static/css/2.163c1558.chunk.css",
-    "static/js/2.96dca9c8.chunk.js",
+    "static/js/2.8d83ae9f.chunk.js",
     "static/css/main.d84267ba.chunk.css",
-    "static/js/main.bd2ab8e2.chunk.js"
+    "static/js/main.a11abefe.chunk.js"
   ]
 }
