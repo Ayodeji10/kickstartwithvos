@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/kickstartwithvos/static/css/main.d84267ba.chunk.css",
+    "main.js": "/kickstartwithvos/static/js/main.bd2ab8e2.chunk.js",
+    "main.js.map": "/kickstartwithvos/static/js/main.bd2ab8e2.chunk.js.map",
+    "runtime-main.js": "/kickstartwithvos/static/js/runtime-main.29a47186.js",
+    "runtime-main.js.map": "/kickstartwithvos/static/js/runtime-main.29a47186.js.map",
+    "static/css/2.163c1558.chunk.css": "/kickstartwithvos/static/css/2.163c1558.chunk.css",
+    "static/js/2.96dca9c8.chunk.js": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js",
+    "static/js/2.96dca9c8.chunk.js.map": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js.map",
+    "static/js/3.191d6c29.chunk.js": "/kickstartwithvos/static/js/3.191d6c29.chunk.js",
+    "static/js/3.191d6c29.chunk.js.map": "/kickstartwithvos/static/js/3.191d6c29.chunk.js.map",
+    "index.html": "/kickstartwithvos/index.html",
+    "static/css/2.163c1558.chunk.css.map": "/kickstartwithvos/static/css/2.163c1558.chunk.css.map",
+    "static/css/main.d84267ba.chunk.css.map": "/kickstartwithvos/static/css/main.d84267ba.chunk.css.map",
+    "static/js/2.96dca9c8.chunk.js.LICENSE.txt": "/kickstartwithvos/static/js/2.96dca9c8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/kickstartwithvos/static/media/Path 2.fa6a19d3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29a47186.js",
+    "static/css/2.163c1558.chunk.css",
+    "static/js/2.96dca9c8.chunk.js",
+    "static/css/main.d84267ba.chunk.css",
+    "static/js/main.bd2ab8e2.chunk.js"
+  ]
+}
