@@ -20,7 +20,7 @@ const Popup = () => {
                     <div className="pop-content">
                         <div className="row">
                             <div className="col-sm-5 col-12">
-                                <img src="/img/Class Fier.png" alt="" className="img-fluid" />
+                                <img src={require("../img/Class Fier.PNG").default} alt="" className="img-fluid" />
                             </div>
                             <div className="col-sm-7 col-12">
                                 <div id="vision">

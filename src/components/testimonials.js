@@ -93,7 +93,8 @@ const Testimonails = () => {
                         <div className="col-lg-8 col-md-8 col-sm-6">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6">
-                                    <img src="/img/Class Fier.PNG" alt="" />
+
+                                    <img src={require("../img/Class Fier.PNG").default} alt="" />
                                     <a href="#pay"><button>Enroll now</button></a>
                                 </div>
                                 <div className="col-lg-6 col-md-6">

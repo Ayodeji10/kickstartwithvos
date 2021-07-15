@@ -17,7 +17,7 @@ const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container">
-                <a className="navbar-brand" href="#"><img src="/img/KSIV-Logo.png" alt="" onClick={() => props.returnHome(false)} /></a>
+                <a className="navbar-brand" href="#"><img src={require("../img/KSIV-Logo.png").default} alt="" onClick={() => props.returnHome(false)} /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                     <span className="navbar-toggler-icon" />

@@ -19,7 +19,7 @@ const Courses = (props) => {
             </div>
             <div className="row course">
                 <div className="col-lg-5 col-md-4">
-                    <img src="/img/Class Fier.png" alt="" />
+                    <img src={require("../img/Class Fier.PNG").default} alt="" />
                 </div>
                 <div className="col-lg-7 col-md-8">
                     <CourseInfo />
@@ -61,7 +61,7 @@ const Courses = (props) => {
             <div className="register" id="pay">
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
-                        <img src="/img/Class Fier.png" alt="" />
+                        <img src={require("../img/Class Fier.PNG").default} alt="" />
                         <h3>Download Course Calendar</h3>
                     </div>
                     <div className="col-lg-6 col-md-6 form-container">
@@ -94,7 +94,6 @@ const Courses = (props) => {
                     </div>
                 </div>
             </div>
-
             <div className="foot">
                 <hr />
                 <p>Copyright © 2021 Kickstarintovos</p>
