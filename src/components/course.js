@@ -1,11 +1,14 @@
-import { getByPlaceholderText } from "@testing-library/react";
 import React, { useState } from "react";
 // import CourseHeader from './course-header';
 import CourseInfo from "./course-info";
 import data from "./data";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Courses = (props) => {
   const [Coupon, setCoupon] = useState("");
+
+  const notify = () => toast.error("Coupon Code Is Invalid!");
 
   const handleCoupon = (e) => {
     setCoupon(e.target.value);
@@ -24,10 +27,13 @@ const Courses = (props) => {
       const link = "https://paystack.com/pay/Kickstartintovoiceover";
       window.open(link);
     } else {
+      let cupon = "";
       data.filter((each) => {
         const { coupon, link } = each;
-        coupon === Coupon ? window.open(link) : console.log("coupon wrong"); // should pop a notifaction screaming coupon is invalid, instead of a console.log here.
+        cupon = coupon;
+        coupon === Coupon && window.open(link); // should pop a notifaction screaming coupon is invalid, instead of a console.log here.
       });
+      cupon !== Coupon && notify();
     }
   };
 
@@ -124,6 +130,17 @@ const Courses = (props) => {
                   onChange={handleCoupon}
                 />
                 <button onClick={handleSubmit}>Enroll Now</button>
+                <ToastContainer
+                  position="top-center"
+                  autoClose={5000}
+                  hideProgressBar
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                />
               </div>
             </form>
           </div>
