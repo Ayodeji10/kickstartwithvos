@@ -28,7 +28,7 @@ const Courses = (props) => {
         const { coupon, link } = each;
         coupon === Coupon
           ? window.open(link, "_blank")
-          : console.log("coupon wrong");
+          : console.log("coupon wrong"); // should pop a notifaction screaming coupon is invalid
       });
     }
   };
