@@ -22,13 +22,11 @@ const Courses = (props) => {
   const handleSubmit = () => {
     if (Coupon === "" || null) {
       const link = "https://paystack.com/pay/Kickstartintovoiceover";
-      window.open(link, "_blank");
+      window.open(link);
     } else {
       data.filter((each) => {
         const { coupon, link } = each;
-        coupon === Coupon
-          ? window.open(link, "_blank")
-          : console.log("coupon wrong"); // should pop a notifaction screaming coupon is invalid
+        coupon === Coupon ? window.open(link) : console.log("coupon wrong"); // should pop a notifaction screaming coupon is invalid, instead of a console.log here.
       });
     }
   };
