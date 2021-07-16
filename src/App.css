@@ -775,6 +775,10 @@ footer i {
     padding: 8px 0px
 }
 
+.form-body a:hover {
+    color: black
+}
+
 .form-body #normal-payment {
     width: 110px;
 }
