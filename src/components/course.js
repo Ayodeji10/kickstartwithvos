@@ -31,7 +31,7 @@ const Courses = (props) => {
       data.filter((each) => {
         const { coupon, link } = each;
         cupon = coupon;
-        coupon === Coupon && window.open(link); // should pop a notifaction screaming coupon is invalid, instead of a console.log here.
+        coupon === Coupon && window.open(link);
       });
       cupon !== Coupon && notify();
     }
@@ -42,7 +42,7 @@ const Courses = (props) => {
       {/* <CourseHeader /> */}
       <div className="course-header">
         <div className="navigation">
-          <h1>Courses</h1>
+          <h1>Go to Course</h1>
           <h1
             className="disabled"
             onClick={() => {
@@ -56,7 +56,7 @@ const Courses = (props) => {
       </div>
       <div className="row course">
         <div className="col-lg-5 col-md-4">
-          <img src={require("../img/Class Fier.PNG").default} alt="" />
+          <img src={require("../img/flyer.jpeg").default} alt="" />
         </div>
         <div className="col-lg-7 col-md-8">
           <CourseInfo />
@@ -105,7 +105,7 @@ const Courses = (props) => {
       <div className="register" id="pay">
         <div className="row">
           <div className="col-lg-6 col-md-6">
-            <img src={require("../img/Class Fier.PNG").default} alt="" />
+            <img src={require("../img/flyer.jpeg").default} alt="" />
             <h3>Download Course Calendar</h3>
           </div>
           <div className="col-lg-6 col-md-6 form-container">
@@ -122,14 +122,17 @@ const Courses = (props) => {
                 </div>
               </div>
               <div className="form-body">
-                <label htmlFor="coupon">Discount Coupon (Optional)</label>
+                <label htmlFor="coupon">
+                  Have a Discount Coupon from one of our Amazing Facilitators?
+                  Enter below to get discount on the Course
+                </label>
                 <input
                   type="tel"
                   id="coupon"
                   placeholder=""
                   onChange={handleCoupon}
                 />
-                <button onClick={handleSubmit}>Enroll Now</button>
+                <button onClick={handleSubmit}>Click Here To Enroll</button>
                 <ToastContainer
                   position="top-center"
                   autoClose={5000}
@@ -150,6 +153,9 @@ const Courses = (props) => {
         <hr />
         <p>Copyright © 2021 Kickstarintovos</p>
       </div>
+      <a href="#nav" className="back-to-top">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </a>
     </div>
   );
 };
